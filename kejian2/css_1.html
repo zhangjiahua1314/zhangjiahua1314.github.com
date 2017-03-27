@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css_1</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: "΢���ź�"��Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>css第一天</h1>
+
+<h2>HTML style 属性 <code>style="style_definition"</code></h2>
+
+<pre><code>&lt;h1 style="color:blue; text-align:center"&gt;This is a header&lt;/h1&gt;
+&lt;p style="color:red"&gt;This is a paragraph.&lt;/p&gt;
+</code></pre>
+
+<ul>
+<li><code>style_definition</code>    一个或多个由分号分隔的 <code>CSS</code> 属性和值。</li>
+</ul>
+
+<h2>HTML <code>&lt;style&gt;</code> 标签</h2>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+&lt;style type="text/css"&gt;
+    span {color:red}
+    p {color:blue}
+&lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;span&gt;span&lt;/span&gt;
+    &lt;div&gt;div&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<h3>定义和用法</h3>
+
+<ul>
+<li><code>&lt;style&gt;</code> 标签用于为 <code>HTML</code> 文档定义样式信息。</li>
+<li>在 <code>style</code> 中，您可以规定在浏览器中如何呈现 HTML 文档。</li>
+<li><code>type</code> 属性是必需的，定义 <code>style</code> 元素的内容。唯一可能的值是 <code>"text/css"</code>。</li>
+<li><code>style</code> 元素位于 <code>head</code> 部分中。</li>
+</ul>
+
+<h3>type 属性<code>&lt;style type="text/css"</code>></h3>
+
+<ul>
+<li>目前，唯一可能的值是 <code>"text/css"</code>。</li>
+</ul>
+
+<h2>HTML <link> 标签</h2>
+
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="theme.css"&gt;
+</code></pre>
+
+<h3>rel 属性<link rel="stylesheet"></h3>
+
+<ul>
+<li><code>stylesheet</code>  文档的外部样式表。</li>
+</ul>
+
+<h3>href 属性<code>&lt;link href="URL"&gt;</code></h3>
+
+<ul>
+<li>URL 超链接的 URL。可能的值：</li>
+<li>绝对 URL - 指向另一个站点</li>
+<li>相对 URL - 指向站点内的某个文件</li>
+</ul>
+
+<h2>CSS选择器</h2>
+
+<ul>
+<li><code>id</code>选择器</li>
+<li><code>class</code>选择器</li>
+<li>标签选择器</li>
+<li>并列选择器</li>
+<li>级联选择器</li>
+<li><code>*</code>通用选择器</li>
+<li>选择器的优先级</li>
+</ul>
+
+<h2>CSS 背景</h2>
+
+<h3>background-color 属性</h3>
+
+<blockquote>
+  <p>设置元素的背景颜色。</p>
+</blockquote>
+
+<pre><code>body{
+  background-color:yellow;
+}
+</code></pre>
+
+<ul>
+<li><code>color_name</code>  规定颜色值为颜色名称的背景颜色（比如 <code>red</code>）。</li>
+<li><code>hex_number</code>  规定颜色值为十六进制值的背景颜色（比如 <code>#ff0000</code>）。</li>
+<li><code>rgb_number</code>  规定颜色值为 rgb 代码的背景颜色（比如 <code>rgb(255,0,0)</code>）。</li>
+<li><code>transparent</code> 默认。背景颜色为透明。</li>
+</ul>
+
+<h3>background-image 属性</h3>
+
+<blockquote>
+  <p>设置背景图像<br />
+  元素的背景占据了元素的全部尺寸，包括内边距和边框，但不包括外边距。<br />
+  默认地，背景图像位于元素的左上角，并在水平和垂直方向上重复。  </p>
+</blockquote>
+
+<pre><code>body { 
+  background-image: url(bgimage.gif);
+  background-color: #000000;
+}
+</code></pre>
+
+<ul>
+<li><code>url('URL')</code>  指向图像的路径。</li>
+<li><code>none</code>    默认值。不显示背景图像。</li>
+</ul>
+
+<h3>background-repeat 属性</h3>
+
+<blockquote>
+  <p>设置是否及如何重复背景图像。</p>
+</blockquote>
+
+<pre><code>body {
+  background-image: url(stars.gif);
+  background-repeat: repeat-y;
+}
+</code></pre>
+
+<ul>
+<li><code>repeat</code>  默认。背景图像将在垂直方向和水平方向重复。</li>
+<li><code>repeat-x</code>    背景图像将在水平方向重复。</li>
+<li><code>repeat-y</code>    背景图像将在垂直方向重复。</li>
+<li><code>no-repeat</code>   背景图像将仅显示一次。</li>
+</ul>
+
+<h3>background-position  属性</h3>
+
+<blockquote>
+  <p>设置背景图像的开始位置。</p>
+</blockquote>
+
+<pre><code>body{ 
+    background-image:url('bgimage.gif');
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position:center;
+}
+</code></pre>
+
+<ul>
+<li><code>top  center right</code> 如果您仅规定了一个关键词，那么第二个值将是<code>"center"</code>。 默认值：0% 0%。</li>
+<li><code>x% y%</code> 第一个值是水平位置，第二个值是垂直位置。左上角是 <code>0% 0%</code>。右下角是 100% 100%。 如果您仅规定了一个值，另一个值将是 50%。</li>
+<li><code>xpos ypos</code>    第一个值是水平位置，第二个值是垂直位置。 左上角是 <code>0 0</code>。单位是像素 <code>(0px 0px)</code> 或任何其他的 <code>CSS</code> 单位。 如果您仅规定了一个值，另一个值将是<code>50%</code>。</li>
+<li>可以混合使用 <code>%</code>和 <code>position</code> 值。</li>
+</ul>
+
+<h3>background-attachment 属性</h3>
+
+<blockquote>
+  <p>设置背景图像是否固定或者随着页面的其余部分滚动。</p>
+</blockquote>
+
+<pre><code>body { 
+  background-image: url(bgimage.gif); 
+  background-attachment: fixed;
+}
+</code></pre>
+
+<ul>
+<li><code>scroll</code>  默认值。背景图像会随着页面其余部分的滚动而移动。</li>
+<li><code>fixed</code>   当页面的其余部分滚动时，背景图像不会移动。</li>
+</ul>
+
+<h3>background 属性</h3>
+
+<blockquote>
+  <p>在一个声明中设置所有的背景属性。<br />
+  通常建议使用这个属性，而不是分别使用单个属性，因为这个属性在较老的浏览器中能够得到更好的支持，而且需要键入的字母也更少。</p>
+</blockquote>
+
+<pre><code>body { 
+  background: #00FF00 url(bgimage.gif) no-repeat fixed top;
+}
+</code></pre>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css_2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: "΢���ź�"��Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>CSS第2天</h1>
+<h2>CSS 字体</h2>
+<h3><code>font-family</code> 属性<code>font-family:value</code></h3>
+<blockquote>
+<p>规定文本的字体系列<br />
+font-family 规定元素的字体系列。<br />
+font-family 可以把多个字体名称作为一个“回退”系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。也就是说，font-family 属性的值是用于某个元素的字体族名称或/及类族名称的一个优先表。浏览器会使用它可识别的第一个值。</p>
+</blockquote>
+<pre><code>p {
+  font-family:&quot;Times New Roman&quot;,Georgia,Serif;
+}
+</code></pre>
+
+<ul>
+<li><code>family-name</code> 用于某个元素的字体族名称或/及类族名称的一个优先表。默认值：取决于浏览器。</li>
+</ul>
+<h3><code>font-size</code> 属性<code>font-size:value</code></h3>
+<pre><code>h1 {font-size:250%;}
+h2 {font-size:200%;}
+p {font-size:100%}
+</code></pre>
+
+<blockquote>
+<p>属性可设置字体的尺寸。</p>
+</blockquote>
+<ul>
+<li><code>xx-small、x-small、small、medium、large、x-large、xx-large</code> 把字体的尺寸设置为不同的尺寸，从 xx-small 到 xx-large。 默认值：medium。</li>
+<li>smaller	把 font-size 设置为比父元素更小的尺寸。</li>
+<li>larger	把 font-size 设置为比父元素更大的尺寸。</li>
+<li>length	把 font-size 设置为一个固定的值。</li>
+<li>%	把 font-size 设置为基于父元素的一个百分比值。</li>
+</ul>
+<h3><code>font-weight</code> 属性<code>font-weight=value</code></h3>
+<pre><code>p.normal {font-weight:normal;}
+p.thick {font-weight:bold;}
+p.thicker {font-weight:900;}
+</code></pre>
+
+<blockquote>
+<p>设置文本的粗细。</p>
+</blockquote>
+<ul>
+<li>normal	默认值。定义标准的字符。</li>
+<li>bold	定义粗体字符。</li>
+<li>bolder	定义更粗的字符。</li>
+<li>lighter	定义更细的字符。</li>
+<li>100-900定义由粗到细的字符。400 等同于 normal，而 700 等同于 bold。</li>
+</ul>
+<h3><code>font-style</code> 属性<code>font-style:value</code></h3>
+<pre><code>p.normal {font-style:normal;}
+p.italic {font-style:italic;}
+p.oblique {font-style:oblique;}
+</code></pre>
+
+<blockquote>
+<p>定义字体的风格</p>
+</blockquote>
+<ul>
+<li><code>normal</code>	默认值。浏览器显示一个标准的字体样式。</li>
+<li><code>italic</code>	浏览器会显示一个斜体的字体样式。</li>
+<li><code>oblique</code>	浏览器会显示一个倾斜的字体样式。</li>
+</ul>
+<h3><code>font-variant</code> 属性</h3>
+<pre><code>p.small {
+  font-variant:small-caps;
+  }
+</code></pre>
+
+<blockquote>
+<p>设置小型大写字母的字体显示文本，这意味着所有的小写字母均会被转换为大写，但是所有使用小型大写字体的字母与其余文本相比，其字体尺寸更小。</p>
+</blockquote>
+<ul>
+<li><code>normal</code>	默认值。浏览器会显示一个标准的字体。</li>
+<li><code>small-caps</code>	浏览器会显示小型大写字母的字体。</li>
+</ul>
+<h2>CSS 文本</h2>
+<h3><code>color</code> 属性<code>color:value</code></h3>
+<pre><code>body{color:red;}
+</code></pre>
+
+<blockquote>
+<p>规定文本的颜色。</p>
+</blockquote>
+<ul>
+<li><code>color_name</code>	规定颜色值为颜色名称的颜色（比如 red）。</li>
+<li><code>hex_number</code>	规定颜色值为十六进制值的颜色（比如 #ff0000）。</li>
+<li><code>rgb_number</code>	规定颜色值为 rgb 代码的颜色（比如 rgb(255,0,0)）。</li>
+</ul>
+<h3><code>direction</code>属性<code>direction:value</code></h3>
+<pre><code>boody{direction: rtl}  
+</code></pre>
+
+<blockquote>
+<p>规定文本的方向 / 书写方向。	</p>
+</blockquote>
+<ul>
+<li><code>ltr</code>	默认。文本方向从左到右。</li>
+<li><code>rtl</code>	文本方向从右到左。</li>
+</ul>
+<h3><code>letter-spacing</code>属性<code>letter-spacing:value</code></h3>
+<pre><code>h1 {letter-spacing:2px}
+h2 {letter-spacing:-3px}
+</code></pre>
+
+<blockquote>
+<p>设置字符间距。</p>
+</blockquote>
+<ul>
+<li><code>normal</code>	默认。规定字符间没有额外的空间。</li>
+<li><code>length</code>	定义字符间的固定空间（允许使用负值）。</li>
+</ul>
+<h3><code>line-height</code>属性</h3>
+<pre><code>p.small {line-height:90%}
+p.big {line-height:200%}
+</code></pre>
+
+<blockquote>
+<p>设置行高。	</p>
+</blockquote>
+<ul>
+<li><code>normal</code>	默认。设置合理的行间距。</li>
+<li><code>number</code>	设置数字，此数字会与当前的字体尺寸相乘来设置行间距。</li>
+<li><code>length</code>	设置固定的行间距。</li>
+<li><code>%</code>	基于当前字体尺寸的百分比行间距。</li>
+</ul>
+<h3><code>text-align</code>属性</h3>
+<pre><code>h1 {text-align:center}
+h2 {text-align:left}
+h3 {text-align:right}
+</code></pre>
+
+<blockquote>
+<p>规定文本的水平对齐方式。	</p>
+</blockquote>
+<ul>
+<li><code>left</code>	把文本排列到左边。默认值：由浏览器决定。</li>
+<li><code>right</code>	把文本排列到右边。</li>
+<li><code>center</code>	把文本排列到中间。</li>
+<li><code>justify</code>	实现两端对齐文本效果。</li>
+</ul>
+<h3><code>text-decoration</code>属性</h3>
+<pre><code>h1 {text-decoration:overline}
+h2 {text-decoration:line-through}
+h3 {text-decoration:underline}
+h4 {text-decoration:blink}
+</code></pre>
+
+<blockquote>
+<p>规定添加到文本的装饰效果。	</p>
+</blockquote>
+<ul>
+<li><code>none</code>	默认。定义标准的文本。</li>
+<li><code>underline</code>	定义文本下的一条线。</li>
+<li><code>overline</code>	定义文本上的一条线。</li>
+<li><code>line-through</code>	定义穿过文本下的一条线。</li>
+</ul>
+<h3><code>text-indent</code>属性</h3>
+<pre><code>p{text-indent:50px;}
+</code></pre>
+
+<blockquote>
+<p>规定文本块首行的缩进。</p>
+</blockquote>
+<ul>
+<li><code>length</code>	定义固定的缩进。默认值：0。</li>
+<li><code>%</code>	定义基于父元素宽度的百分比的缩进。</li>
+</ul>
+<h3><code>text-transform</code>属性</h3>
+<pre><code>h1 {text-transform:uppercase}
+h2 {text-transform:capitalize}
+p {text-transform:lowercase}
+</code></pre>
+
+<blockquote>
+<p>控制文本的大小写。	</p>
+</blockquote>
+<ul>
+<li><code>none</code>	默认。定义带有小写字母和大写字母的标准的文本。</li>
+<li><code>capitalize</code>	首字母大写。</li>
+<li><code>uppercase</code>	全部大写。</li>
+<li><code>lowercase</code>	全部小写。</li>
+</ul>
+<h3><code>white-space</code>属性</h3>
+<pre><code>p{white-space: nowrap}
+</code></pre>
+
+<blockquote>
+<p>规定如何处理元素中的空白。</p>
+</blockquote>
+<ul>
+<li><code>normal</code>	默认。空白会被浏览器忽略。</li>
+<li><code>pre</code>	空白会被浏览器保留。其行为方式类似<code>HTML</code> 中的 <code>&lt;pre&gt;</code> 标签。</li>
+<li><code>nowrap</code>	文本不会换行，文本会在在同一行上继续，直到遇到 <code>&lt;br&gt;</code> 标签为止。</li>
+<li><code>pre-wrap</code>	保留空白符序列，但是正常地进行换行。</li>
+<li><code>pre-line</code>	合并空白符序列，但是保留换行符。</li>
+</ul>
+<h3><code>word-spacing</code>属性</h3>
+<pre><code>p{word-spacing:25px;}
+</code></pre>
+
+<blockquote>
+<p>设置单词间距。	</p>
+</blockquote>
+<ul>
+<li><code>normal</code>	默认。定义单词间的标准空间。</li>
+<li><code>length</code>	定义单词间的固定空间。</li>
+</ul>
+<h3><code>text-overflow</code>属性</h3>
+<pre><code>div.test{
+text-overflow:ellipsis;
+}
+</code></pre>
+
+<blockquote>
+<p>规定当文本溢出包含元素时发生的事情。3</p>
+</blockquote>
+<ul>
+<li><code>clip</code>	修剪文本。	测试</li>
+<li><code>ellipsis</code>	显示省略符号来代表被修剪的文本。</li>
+</ul>
+<h3><code>text-shadow</code>属性</h3>
+<pre><code>h1{
+text-shadow: 5px 5px 5px #FF0000;
+}
+</code></pre>
+
+<blockquote>
+<p>向文本添加阴影。3</p>
+</blockquote>
+<ul>
+<li><code>h-shadow</code>	必需。水平阴影的位置。允许负值。</li>
+<li><code>v-shadow</code>	必需。垂直阴影的位置。允许负值。</li>
+<li><code>blur</code>	可选。模糊的距离。	测试</li>
+<li><code>color</code>	可选。阴影的颜色。</li>
+</ul>
+<h3><code>word-wrap</code>属性</h3>
+<pre><code>p.test {word-wrap:break-word;}
+</code></pre>
+
+<blockquote>
+<p>允许对长的不可分割的单词进行分割并换行到下一行。</p>
+</blockquote>
+<ul>
+<li><code>normal</code>	只在允许的断字点换行（浏览器保持默认处理）。</li>
+<li><code>break-word</code>	在长单词或 URL 地址内部进行换行。</li>
+</ul>
+<h2>CSS 边框属性</h2>
+<h3><code>border-width</code>属性</h3>
+<pre><code>border-width:thin medium thick 10px;
+</code></pre>
+
+<blockquote>
+<p>为元素的所有边框设置宽度，或者单独地为各边边框设置宽度。
+只有当边框样式不是 none 时才起作用。如果边框样式是 none，边框宽度实际上会重置为 0。不允许指定负长度值。</p>
+</blockquote>
+<ul>
+<li>上边框是细边框</li>
+<li>右边框是中等边框</li>
+<li>下边框是粗边框</li>
+<li>左边框是 10px 宽的边框</li>
+</ul>
+<h3><code>border-style</code> 属性</h3>
+<pre><code>border-style:dotted solid double dashed; 
+</code></pre>
+
+<blockquote>
+<p>用于设置元素所有边框的样式，或者单独地为各边设置边框样式。只有当这个值不是 none 时边框才可能出现。</p>
+</blockquote>
+<ul>
+<li>上边框是点状</li>
+<li>右边框是实线</li>
+<li>下边框是双线</li>
+<li>左边框是虚线</li>
+</ul>
+<h3><code>border-color</code>属性</h3>
+<pre><code>border-color:red green blue pink;
+</code></pre>
+
+<blockquote>
+<p>设置四条边框的颜色。</p>
+</blockquote>
+<ul>
+<li>上边框是红色</li>
+<li>右边框是绿色</li>
+<li>下边框是蓝色</li>
+<li>左边框是粉色</li>
+</ul>
+<h3><code>border</code>属性</h3>
+<blockquote>
+<p>在一个声明设置所有的边框属性。</p>
+</blockquote>
+<p>可以按顺序设置如下属性：<br />
+1. border-width<br />
+2. border-style<br />
+3. border-color  </p>
+<h3><code>border-radius</code> 属性</h3>
+<pre><code>border-radius:2em;
+border-radius:10px;
+</code></pre>
+
+<blockquote>
+<p>元素添加圆角边框</p>
+</blockquote>
+<h2>ul、li列表</h2>
+<h3><code>list-style</code>属性</h3>
+<pre><code>list-style:square inside url('/i/arrow.gif');
+</code></pre>
+
+<blockquote>
+<p>在一个声明中设置所有的列表属性。</p>
+</blockquote>
+<p>可以按顺序设置如下属性：<br />
+- list-style-type<br />
+- list-style-position<br />
+- list-style-image  </p>
+<h3><code>list-style-image</code>属性</h3>
+<pre><code>list-style-image:url(&quot;/i/arrow.gif&quot;);
+</code></pre>
+
+<blockquote>
+<p>将图象设置为列表项标记。</p>
+</blockquote>
+<ul>
+<li><code>URL</code>	图像的路径。</li>
+</ul>
+<h3><code>list-style-position</code>属性</h3>
+<pre><code>list-style-position:inside;
+</code></pre>
+
+<blockquote>
+<p>设置列表项标记的放置位置。</p>
+</blockquote>
+<ul>
+<li><code>inside</code>	列表项目标记放置在文本以内，且环绕文本根据标记对齐。</li>
+<li><code>outside</code>	默认值。保持标记位于文本的左侧。列表项目标记放置在文本以外，且环绕文本不根据标记对齐。</li>
+</ul>
+<h3><code>list-style-type</code>属性</h3>
+<pre><code>ul.circle {list-style-type:circle;}
+ul.square {list-style-type:square;}
+ol.upper-roman {list-style-type:upper-roman;}
+ol.lower-alpha {list-style-type:lower-alpha;}
+</code></pre>
+
+<blockquote>
+<p>设置列表项标记的类型。</p>
+</blockquote>
+<ul>
+<li><code>disc</code>	默认。标记是实心圆。</li>
+<li><code>circle</code>	标记是空心圆。</li>
+<li><code>square</code>	标记是实心方块。</li>
+<li><code>decimal</code>	标记是数字。</li>
+<li><code>decimal-leading-zero</code>	0开头的数字标记。(01, 02, 03, 等。)</li>
+<li><code>lower-roman</code>	小写罗马数字(i, ii, iii, iv, v, 等。)</li>
+<li><code>upper-roman</code>	大写罗马数字(I, II, III, IV, V, 等。)</li>
+<li><code>lower-alpha</code>	小写英文字母The marker is lower-alpha (a, b, c, d, e, 等。)</li>
+<li><code>upper-alpha</code>	大写英文字母The marker is upper-alpha (A, B, C, D, E, 等。)</li>
+<li><code>lower-greek</code>	小写希腊字母(alpha, beta, gamma, 等。)</li>
+<li><code>lower-latin</code>	小写拉丁字母(a, b, c, d, e, 等。)</li>
+<li><code>upper-latin</code>	大写拉丁字母(A, B, C, D, E, 等。)</li>
+<li><code>hebrew</code>	传统的希伯来编号方式</li>
+<li><code>armenian</code>	传统的亚美尼亚编号方式</li>
+<li><code>georgian</code>	传统的乔治亚编号方式(an, ban, gan, 等。)</li>
+<li><code>cjk-ideographic</code>	简单的表意数字</li>
+<li><code>hiragana</code>	标记是：a, i, u, e, o, ka, ki, 等。（日文片假名）</li>
+<li><code>katakana</code>	标记是：A, I, U, E, O, KA, KI, 等。（日文片假名）</li>
+<li><code>hiragana-iroha</code>	标记是：i, ro, ha, ni, ho, he, to, 等。（日文片假名）</li>
+<li><code>katakana-iroha</code>	标记是：I, RO, HA, NI, HO, HE, TO, 等。（日文片假名）</li>
+</ul>
+<h2>表格（Table） 属性</h2>
+<h3>border-collapse 属性</h3>
+<blockquote>
+<p>设置表格的边框是否被合并为一个单一的边框，还是象在标准的 HTML 中那样分开显示。</p>
+</blockquote>
+<ul>
+<li>collapse	如果可能，边框会合并为一个单一的边框。</li>
+<li>separate	默认值。边框会被分开。</li>
+</ul>
+<h3>border-spacing 属性</h3>
+<blockquote>
+<p>设置相邻单元格的边框间的距离（仅用于&quot;边框分离&quot;模式）。</p>
+</blockquote>
+<ul>
+<li>
+length length	规定相邻单元的边框之间的距离。使用 px、cm 等单位。不允许使用负值。
+<ul>
+<li>如果定义一个 length 参数，那么定义的是水平和垂直间距。</li>
+<li>如果定义两个 length 参数，那么第一个设置水平间距，而第二个设置垂直间距。</li>
+</ul>
+</li>
+</ul>
+<h3>caption-side 属性</h3>
+<blockquote>
+<p>设置表格标题的位置。</p>
+</blockquote>
+<ul>
+<li>top	默认值。把表格标题定位在表格之上。</li>
+<li>bottom	把表格标题定位在表格之下。</li>
+</ul>
+<h3>empty-cells 属性</h3>
+<blockquote>
+<p>设置是否显示表格中的空单元格（仅用于&quot;分离边框&quot;模式）。</p>
+</blockquote>
+<ul>
+<li>hide	不在空单元格周围绘制边框。</li>
+<li>show	在空单元格周围绘制边框。默认。</li>
+</ul>
+<h2>定位和浮动</h2>
+<h3><code>position属性</code> 规定元素的定位类型。</h3>
+<ul>
+<li><code>absolute</code> 生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。元素的位置通过 <code>&quot;left&quot;, &quot;top&quot;, &quot;right&quot;</code> 以及 &quot;bottom&quot;` 属性进行规定。  </li>
+<li><code>relative</code> 生成相对定位的元素，相对于其正常位置进行定位。 因此，<code>&quot;left:20&quot;</code> 会向元素的 <code>LEFT</code> 位置添加 20 像素。  </li>
+<li><code>fixed</code>生成绝对定位的元素，相对于浏览器窗口进行定位。元素的位置通过 <code>&quot;left&quot;, &quot;top&quot;, &quot;right&quot;</code> 以及 <code>&quot;bottom&quot;</code> 属性进行规定。</li>
+<li><code>static</code>	默认值。没有定位，元素出现在正常的流中（忽略 <code>top, bottom, left, right</code> 或者 <code>z-index</code> 声明）。</li>
+</ul>
+<h3><code>bottom</code>属性</h3>
+<blockquote>
+<p>设置定位元素下外边距边界与其包含块下边界之间的偏移。</p>
+</blockquote>
+<h3><code>left</code>属性</h3>
+<blockquote>
+<p>设置定位元素左外边距边界与其包含块左边界之间的偏移。</p>
+</blockquote>
+<h3><code>right</code>属性</h3>
+<blockquote>
+<p>设置定位元素右外边距边界与其包含块右边界之间的偏移。</p>
+</blockquote>
+<h3><code>top</code>属性</h3>
+<blockquote>
+<p>设置定位元素的上外边距边界与其包含块上边界之间的偏移。</p>
+</blockquote>
+<h3><code>z-index</code>属性</h3>
+<blockquote>
+<p>设置元素的堆叠顺序。</p>
+</blockquote>
+<h3><code>vertical-align</code>属性</h3>
+<blockquote>
+<p>设置元素的垂直对齐方式。</p>
+</blockquote>
+<ul>
+<li><code>baseline</code>	默认。元素放置在父元素的基线上。</li>
+<li><code>sub</code>	垂直对齐文本的下标。</li>
+<li><code>super</code>	垂直对齐文本的上标</li>
+<li><code>top</code>	把元素的顶端与行中最高元素的顶端对齐</li>
+<li><code>text-top</code>	把元素的顶端与父元素字体的顶端对齐</li>
+<li><code>middle</code>	把此元素放置在父元素的中部。</li>
+<li><code>bottom</code>	把元素的顶端与行中最低的元素的顶端对齐。</li>
+<li><code>text-bottom</code>	把元素的底端与父元素字体的底端对齐。</li>
+<li><code>length</code>	 </li>
+<li><code>%</code>使用 <code>&quot;line-height&quot;</code> 属性的百分比值来排列此元素。允许使用负值。</li>
+</ul>
+<h3><code>visibility</code>属性</h3>
+<blockquote>
+<p>规定元素是否可见。</p>
+</blockquote>
+<ul>
+<li><code>visible</code>	默认值。元素是可见的。</li>
+<li><code>hidden</code>	元素是不可见的。</li>
+</ul>
+<h3><code>clear</code>属性</h3>
+<blockquote>
+<p>规定元素的哪一侧不允许其他浮动元素。</p>
+</blockquote>
+<ul>
+<li><code>left</code>	在左侧不允许浮动元素。</li>
+<li><code>right</code>	在右侧不允许浮动元素。</li>
+<li><code>both</code>	在左右两侧均不允许浮动元素。</li>
+<li><code>none</code>	默认值。允许浮动元素出现在两侧。</li>
+</ul>
+<h3><code>cursor</code>属性</h3>
+<blockquote>
+<p>规定要显示的光标的类型（形状）。</p>
+</blockquote>
+<ul>
+<li><code>default</code>	默认光标（通常是一个箭头）</li>
+<li><code>auto</code>	 默认。浏览器设置的光标。</li>
+<li><code>crosshair</code>	光标呈现为十字线。</li>
+<li><code>pointer</code>	光标呈现为指示链接的指针（一只手）</li>
+<li><code>move</code>	此光标指示某对象可被移动。</li>
+<li><code>e-resize</code>	此光标指示矩形框的边缘可被向右（东）移动。</li>
+<li><code>ne-resize</code>	此光标指示矩形框的边缘可被向上及向右移动（北/东）。</li>
+<li><code>nw-resize</code>	此光标指示矩形框的边缘可被向上及向左移动（北/西）。</li>
+<li><code>n-resize</code>	此光标指示矩形框的边缘可被向上（北）移动。</li>
+<li><code>se-resize</code>此光标指示矩形框的边缘可被向下及向右移动（南/东）。</li>
+<li><code>sw-resize</code>	此光标指示矩形框的边缘可被向下及向左移动（南/西）。</li>
+<li><code>s-resize</code>	此光标指示矩形框的边缘可被向下移动（南）。</li>
+<li><code>w-resize</code>	此光标指示矩形框的边缘可被向左移动（西）。</li>
+<li><code>text</code>	此光标指示文本。</li>
+<li><code>wait</code>	此光标指示程序正忙（通常是一只表或沙漏）。</li>
+<li><code>help</code>	此光标指示可用的帮助（通常是一个问号或一个气球）。</li>
+</ul>
+<h3><code>float</code>属性</h3>
+<blockquote>
+<p>规定框是否应该浮动。</p>
+</blockquote>
+<ul>
+<li><code>left</code>	元素向左浮动。</li>
+<li><code>right</code>元素向右浮动。</li>
+<li><code>none</code>	默认值。元素不浮动，并会显示在其在文本中出现的位置。</li>
+</ul>
+<h3><code>clear</code> 属性</h3>
+<blockquote>
+<p>clear 属性规定元素的哪一侧不允许其他浮动元素。</p>
+</blockquote>
+<ul>
+<li>left	在左侧不允许浮动元素。</li>
+<li>right	在右侧不允许浮动元素。</li>
+<li>both	在左右两侧均不允许浮动元素。</li>
+<li>none	默认值。允许浮动元素出现在两侧。</li>
+</ul>
+<h3><code>display</code>属性</h3>
+<blockquote>
+<p>规定元素应该生成的框的类型。</p>
+</blockquote>
+<ul>
+<li><code>none</code> 	此元素不会被显示。</li>
+<li><code>block</code>	此元素将显示为块级元素，此元素前后会带有换行符。</li>
+<li><code>inline</code>	默认。此元素会被显示为内联元素，元素前后没有换行符。</li>
+<li><code>inline-block</code>	行内块元素。（CSS2.1 新增的值）</li>
+</ul>
+<h3><code>overflow</code>属性</h3>
+<blockquote>
+<p>规定当内容溢出元素框时发生的事情。</p>
+</blockquote>
+<ul>
+<li><code>visible</code>	默认值。内容不会被修剪，会呈现在元素框之外。</li>
+<li><code>hidden</code>	内容会被修剪，并且其余内容是不可见的。</li>
+<li><code>scroll</code>	内容会被修剪，但是浏览器会显示滚动条以便查看其余的内容。</li>
+<li><code>auto</code> 	如果内容被修剪，则浏览器会显示滚动条以便查看其余的内容。</li>
+</ul>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
